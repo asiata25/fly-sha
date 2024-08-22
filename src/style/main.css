@@ -678,20 +678,79 @@ body {
   animation: scroll 60s linear infinite;
 }
 
-.slider img {
+.slider > img {
   opacity: 0.5;
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 100ms;
 }
 
-.slider img:hover {
+.slider > img:hover {
   opacity: 1;
 }
 
-.my-\[100px\] {
-  margin-top: 100px;
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-\[67px\] {
+  top: 67px;
+}
+
+.bottom-\[60px\] {
+  bottom: 60px;
+}
+
+.-top-\[67px\] {
+  top: -67px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
+.top-36 {
+  top: 9rem;
+}
+
+.left-40 {
+  left: 10rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.-z-0 {
+  z-index: 0;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.mb-25 {
   margin-bottom: 100px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-7\.5 {
@@ -700,6 +759,14 @@ body {
 
 .mb-\[103px\] {
   margin-bottom: 103px;
+}
+
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
+.mb-\[150px\] {
+  margin-bottom: 150px;
 }
 
 .mb-\[26px\] {
@@ -714,12 +781,38 @@ body {
   margin-bottom: 90px;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
+.me-\[14px\] {
+  margin-inline-end: 14px;
+}
+
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.size-\[50px\] {
+  width: 50px;
+  height: 50px;
+}
+
 .h-10 {
   height: 2.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-6 {
@@ -734,6 +827,14 @@ body {
   height: 2rem;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -746,8 +847,40 @@ body {
   width: 100%;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .max-w-55 {
   max-width: 220px;
+}
+
+.max-w-\[345px\] {
+  max-width: 345px;
+}
+
+.rotate-12 {
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-12 {
+  --tw-rotate: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-45 {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -766,13 +899,38 @@ body {
   justify-content: space-between;
 }
 
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-7\.5 {
+  gap: 30px;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
+}
+
+.gap-25 {
+  gap: 100px;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-12\.5 {
   -moz-column-gap: 50px;
        column-gap: 50px;
+}
+
+.gap-x-2\.5 {
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
 }
 
 .gap-x-3 {
@@ -806,8 +964,30 @@ body {
   border-radius: 20px;
 }
 
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-t-\[6px\] {
+  border-top-width: 6px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-brand-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(184 141 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#2E2741\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(46 39 65 / var(--tw-border-opacity));
 }
 
 .bg-brand-primary {
@@ -820,12 +1000,21 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-brand-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 3 24 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/src\/assets\/images\/airplane-taking-off-sunset\.png\'\)\] {
   background-image: url('/src/assets/images/airplane-taking-off-sunset.png');
 }
 
 .bg-cover {
   background-size: cover;
+}
+
+.p-2\.5 {
+  padding: 0.625rem;
 }
 
 .p-5 {
@@ -842,6 +1031,14 @@ body {
 
 .pt-7\.5 {
   padding-top: 30px;
+}
+
+.pt-25 {
+  padding-top: 100px;
+}
+
+.pb-7\.5 {
+  padding-bottom: 30px;
 }
 
 .text-center {
@@ -866,6 +1063,11 @@ body {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -878,12 +1080,12 @@ body {
   font-weight: 500;
 }
 
-.leading-9 {
-  line-height: 2.25rem;
-}
-
 .leading-7\.5 {
   line-height: 30px;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
 }
 
 .text-brand-dark {
@@ -891,14 +1093,19 @@ body {
   color: rgb(8 3 24 / var(--tw-text-opacity));
 }
 
+.text-brand-grey {
+  --tw-text-opacity: 1;
+  color: rgb(144 146 150 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-brand-grey {
+.text-\[\#A0A0AC\] {
   --tw-text-opacity: 1;
-  color: rgb(144 146 150 / var(--tw-text-opacity));
+  color: rgb(160 160 172 / var(--tw-text-opacity));
 }
 
 .heading-1 {
@@ -909,4 +1116,13 @@ body {
 .heading-2 {
   font-size: 32px;
   font-weight: 700;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
+.hover\:text-brand-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(184 141 255 / var(--tw-text-opacity));
 }

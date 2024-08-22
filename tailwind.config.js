@@ -17,7 +17,9 @@ module.exports = {
         7.5: "30px",
         12.5: "50px",
         15: "60px",
+        25: "100px",
         55: "220px",
+        77.5: "310px",
       },
       colors: {
         brand: {
