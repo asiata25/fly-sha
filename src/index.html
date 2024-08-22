@@ -1,13 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlySha | BWA</title>
-  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./style/base.css">
-</head>
-<body>
-  <h1 class="text-3xl font-bold">Hello World</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlySha | BWA</title>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts: Poppins, Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <header
+      class="bg-[url('/src/assets/images/airplane-taking-off-sunset.png')] bg-cover"
+    >
+      <div class="container mb-[51px]">
+        <!-- navbar: start -->
+        <nav class="pt-7.5 mb-[103px] flex items-center justify-between">
+          <!-- logo -->
+          <a href="/" class="flex items-center gap-x-3">
+            <img src="./assets/logo.svg" class="h-10" alt="FlySha" />
+            <span class="text-[26px] font-bold text-white">FlySha</span>
+          </a>
+
+          <!-- nav link -->
+          <div class="gap-x-7.5 flex items-center justify-between text-white">
+            <a href="#" class="text-lg font-medium">Flash Sale</a>
+            <a href="#" class="text-lg font-medium">Discover</a>
+            <a href="#" class="text-lg font-medium">Packages</a>
+            <a href="#" class="text-lg font-medium">Stories</a>
+            <a href="#" class="text-lg font-medium">About</a>
+            <a href="#" role="button" class="btn-primary">Sign Up</a>
+          </div>
+        </nav>
+        <!-- navbar: end -->
+
+        <!-- heading: start -->
+        <div class="gap-y-7.5 mb-[90px] flex flex-col">
+          <h1 class="heading-1 font-extrabold text-white">
+            Best Flights.<br />
+            Cheaper Budget.
+          </h1>
+          <p class="text-lg leading-9 text-white">
+            No more long queue, get more delicious heavy meals.<br />
+            Crafted by best talented people around the world.
+          </p>
+        </div>
+        <!-- heading: end -->
+
+        <!-- cta: start -->
+        <div
+          class="flex items-center justify-between rounded-[20px] bg-white p-5"
+        >
+          <div class="flex items-center gap-x-[50px] p-5">
+            <div class="flex flex-col gap-y-[14px]">
+              <span class="text-brand-dark font-inter text-lg">Departure</span>
+              <button class="btn-dropdown" type="button">
+                <img
+                  class="h-8 w-8"
+                  src="./assets/icons/airplane.svg"
+                  alt="departure"
+                />
+                Jakarta
+                <img
+                  class="h-6 w-6"
+                  src="./assets/icons/arrow-down.svg"
+                  alt="arrow down"
+                />
+              </button>
+            </div>
+
+            <!-- separator -->
+            <div class="separator"></div>
+
+            <div class="flex flex-col gap-y-[14px]">
+              <span class="text-brand-dark font-inter text-lg">Arrival</span>
+              <button class="btn-dropdown" type="button">
+                <img
+                  class="h-8 w-8"
+                  src="./assets/icons/airplane.svg"
+                  alt="departure"
+                />
+                Shanghai
+                <img
+                  class="h-6 w-6"
+                  src="./assets/icons/arrow-down.svg"
+                  alt="arrow down"
+                />
+              </button>
+            </div>
+
+            <!-- separator -->
+            <div class="separator"></div>
+
+            <div class="flex flex-col gap-y-[14px]">
+              <span class="text-brand-dark font-inter text-lg"
+                >Departure Date</span
+              >
+              <button class="btn-dropdown" type="button">
+                <img
+                  class="h-8 w-8"
+                  src="./assets/icons/calendar.svg"
+                  alt="departure"
+                />
+                12 Jan 2024
+              </button>
+            </div>
+          </div>
+          <button type="button" class="btn-big">Explore Now</button>
+        </div>
+        <!-- cta: end -->
+      </div>
+
+      <!-- logo client: start -->
+      <div class="w-full overflow-hidden pb-[50px]">
+        <div class="slider gap-x-12.5 flex">
+          <img src="./assets/images/logo-1.svg" alt="logo 1" class="h-7.5" />
+          <img src="./assets/images/logo-2.svg" alt="logo 2" class="h-7.5" />
+          <img src="./assets/images/logo-3.svg" alt="logo 3" class="h-7.5" />
+          <img src="./assets/images/logo-4.svg" alt="logo 4" class="h-7.5" />
+          <img src="./assets/images/logo-1.svg" alt="logo 1" class="h-7.5" />
+          <img src="./assets/images/logo-2.svg" alt="logo 2" class="h-7.5" />
+          <img src="./assets/images/logo-3.svg" alt="logo 3" class="h-7.5" />
+          <img src="./assets/images/logo-4.svg" alt="logo 4" class="h-7.5" />
+          <img src="./assets/images/logo-1.svg" alt="logo 1" class="h-7.5" />
+          <img src="./assets/images/logo-2.svg" alt="logo 2" class="h-7.5" />
+          <img src="./assets/images/logo-3.svg" alt="logo 3" class="h-7.5" />
+          <img src="./assets/images/logo-4.svg" alt="logo 4" class="h-7.5" />
+        </div>
+      </div>
+      <!-- logo client: end -->
+    </header>
+  </body>
 </html>
