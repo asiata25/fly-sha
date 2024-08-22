@@ -46,4 +46,8 @@
   .heading-1 {
     @apply text-[80px] leading-[90px];
   }
+
+  .heading-2 {
+    @apply text-[32px] font-bold;
+  }
 }

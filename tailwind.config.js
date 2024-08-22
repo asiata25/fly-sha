@@ -17,15 +17,17 @@ module.exports = {
         7.5: "30px",
         12.5: "50px",
         15: "60px",
+        55: "220px",
       },
       colors: {
         brand: {
           primary: "#B88DFF",
           dark: "#080318",
+          grey: "#909296",
         },
       },
       animation: {
-        "slider": "scroll 60s linear infinite",
+        slider: "scroll 60s linear infinite",
       },
       keyframes: {
         scroll: {
@@ -33,6 +35,9 @@ module.exports = {
           "100%": { transform: "translateX(-100%)" },
         },
       },
+      lineHeight:{
+        7.5: '30px'
+      }
     },
   },
   plugins: [],
